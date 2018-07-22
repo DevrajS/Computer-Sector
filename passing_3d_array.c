@@ -11,8 +11,8 @@ int display(int *p,int ii,int jj,int kk);
   If I write *(p+1) then it will point to the 0th row of the next 2d array.
   *(p+1) is same as *(p+1)+0. Again if I write *(*(p+1)+0) or *(*(p+1)+0)+0
   it will point or return the base address of the 1d array by adding 1 it will point to 
-  the next element by writing this (*(*(p+1)+2)+0). And then it will give the integer value
-  by *(*(*(p+1)+2)+0) this.
+  the next element by writing this (*(*(p+1)+0)+1). And then it will give the integer value
+  by *(*(*(p+1)+0)+1) this.
 */
 int show(int (*p)[4][2],int ii,int jj,int kk)
 {
