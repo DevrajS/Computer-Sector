@@ -1,6 +1,6 @@
 /*
   Credit 
-       | -DevRaj |	
+       | -DevRaj |
 */
 #include<stdio.h>
 int display(int *p,int ii,int jj,int kk);
@@ -18,7 +18,7 @@ int show(int (*p)[4][2],int ii,int jj,int kk)
 {
 	int *q; // Well, this will always hold the address of the variable containing integer value.
  
-   //printf("%d\n",*(*(*(p+1)+2)+0)); // printing element directly by pointer to a 2d array variable : P
+       //printf("%d\n",*(*(*(p+1)+2)+0)); // printing element directly by pointer to a 2d array variable : P
 	printf("printing by show method : \n"); 
 	for (int i = 0; i < ii; ++i)
 	{
@@ -40,25 +40,25 @@ int show(int (*p)[4][2],int ii,int jj,int kk)
 int main(int argc, char const *argv[])
 {
 	int a[3][4][2]={
-					{
-					{2,4},
-					{7,8},
-					{3,4},
-					{5,6}
-					},
-					{
-						{7,6},
-						{3,4},
-						{5,3},
-						{2,3}
-					},
-					{
-						{8,9},
-						{7,2},
-						{3,4},
-						{5,1}
-					}
-	};
+			  {
+			     {2,4},
+			     {7,8},
+			     {3,4},
+			     {5,6}
+			   },
+			  {
+			     {7,6},
+			     {3,4},
+			     {5,3},
+			     {2,3}
+			    },
+			   {
+			     {8,9},
+			     {7,2},
+			     {3,4},
+			     {5,1}
+			    }
+	              };
 	/*passing base address of the 3d array and its corresponding sizes*/
 	display(a,3,4,2);
 	show(a,3,4,2);
